@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>E-Shopper</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/font-awesome.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/main.css}"/>
+    <script src="/login.js" ></script>
+    
+    
+
+
+  </head>
+<body>
+	<!-- <div class="main">
+		<h1>Admin Login Form</h1>
+		<div class="signin-form">
+			<form action="" method="post">
+				<input type="text" placeholder="User Name" name="name" required>
+				<input type="password" placeholder="Password" name="password" required>
+				<input type="submit" value="Sign In">
+			</form>
+		</div>
+	</div> -->
+	
+	
+<form action="AdminHome.html" method="get">
+
+<table align="center"  width = "600" height = "150">
+
+<tr><th height="60"><font size="6">Admin Login</font></th></tr>
+
+<tr><th height="60"><font size="4">Admin UserName :</font></th>
+<th><input type="text" name="username" id="userid" /></th>
+</tr>
+<tr><th height="60"><font size="4">Password :</font></th>
+<th><input type="password" name="password" id="pswd" /></th>
+</tr>
+<tr><th>
+<input type="submit" value="Login" onclick="validate()" />
+</th></tr>
+</table>
+</form>
+	<th:block th:include="/_footer"></th:block>
+</body>
+</html>

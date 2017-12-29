@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/> -->
+<title>Admin Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/templatemo_style.css}"/>
+<link rel="stylesheet" type="text/css" th:href="@{/styles1.css}"/>
+</head>
+<body>
+
+<th:block th:include="/_header2"></th:block>
+
+<form action="#" method="get">
+
+<table align="center"  width = "600" height = "150">
+
+<tr><th height="60"><font size="6">Add a New Product</font></th></tr>
+
+<tr><th height="60"><font size="4">Code of the Product :</font></th>
+<th><input type="number" name="productId" /></th>
+</tr>
+<tr><th height="60"><font size="4">Name of the Product :</font></th>
+<th><input type="text" name="productName" /></th>
+</tr>
+<tr><th height="60"><font size="4">Price of the Product :</font></th>
+<th><input type="number" name="productPrice" /></th>
+</tr>
+
+<!-- <tr><th height="60"><font size="4">Image of the Product :</font></th><th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+<input type="file" id="myFile" name="image" ></th></tr>
+ -->
+<!--  <tr><th></th><th> -->
+<tr><th>
+ <input type="submit" value="Save"/>
+<!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -->
+<input type="reset" value="Clear"/></th></tr>
+</table>
+</form>
+
+<th:block th:include="/_footer"></th:block>
+</body>
+</html>
